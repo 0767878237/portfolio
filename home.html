@@ -1,0 +1,200 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9e2020f946.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Backend Developer</p>
+                <h1>Hello,I'm <span>Le Duc Anh Tuan</span> <br>from Ho Chi Minh City</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/avt.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As an Electronics and Communications student, I am eager to secure an
+position as a software developer member and ability to learn and apply new 
+technology quickly. My goal is to obtain more experience, improve my skills and have 
+more prospects in this field. With a strong foundation and a desire to learn, I am 
+eager to contribute to projects and enhance my skills in the workplace.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links"onclick="opentab('project')">Projects</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Language</span><br>Javascript, Python, HTML, CSS</li>
+                        <li><span>Tools and Frameworks</span><br>Django, Scikit-learn, Tensorflow, Git, SQL</li>
+                        <li><span>Others</span><br></li>
+                            <p>Effective time management</p>
+                            <p>Capable of working effectively in a team</p>
+                            <p>Well communication skills</p>
+                    </ul>
+                </div>
+                <!-- Education -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021</span><br>University of Science ( HCMUS ) - Linh Trung Ward, Thu Duc City</li>
+                        <li><span>Faculty of</span><br>Electronics and Communications</li>
+                        <li><span>Certificate</span><br>TOEIC: 830</li>
+                    </ul>
+                </div>
+                <!-- Project -->
+                <div class="tab-contents" id="project">
+                    <ul>
+                        <li><span>Personal</span><br>Portfolio Website</li>
+                        <li><span>Subject Project</span><br>Intelligent City Website</li>
+                        <li><span>Graduate Project</span><br>AI Summary Website</li>
+                    </ul>
+                </div>
+                <!-- Experience -->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Python Backend intern at BeeSmart Solutions Company (2025)</span><br></li>
+                        <p>Develop APIs: Build REST or GraphQL APIs so that frontend applications (web/mobile) can access data</p>
+                        <p>Handle business logic: Implement data processing rules, user authentication, and authorization</p>
+                        <p>Work with databases: Design data models, write queries using Django ORM (or raw SQL)</p>
+                        <p>Secure the system: Prevent SQL injection, CSRF, XSS, and protect APIs</p>
+                        <p>Deploy and maintain the system: Deploy to VPS, Docker and other platforms.</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- About -->
+
+    <!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/web.png" alt="">
+                <div class="layer">
+                    <h3>Social Website</h3>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/django.jpg" alt="">
+                <div class="layer">
+                    <h3>Manage Using Django</h3>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>  
+                </div>
+            </div>
+            <div class="work">
+                <img src="/git.jpg" alt="">
+                <div class="layer">
+                    <h3>Manage Using Git</h3>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>  
+                </div>
+            </div>
+            <div class="work">
+                <img src="/CI-CD.jpg" alt="">
+                <div class="layer">
+                    <h3>Manage Using CI/CD</h3>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>  
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+    <!-- portfolio -->
+
+    <!-- Contact -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> LeTuan752003@gmail.com</p> 
+                    <p><i class="fa-solid fa-phone"></i> 0767878237</p>
+                    <p></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/le-duc-anh-tuan-669a25276/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100010995979333"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/leducanh.tuan/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="LeDucAnhTuan_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <!-- <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form> -->
+                    <h1 class="sub-title">More</h1>
+                    <a href="https://hcmus.edu.vn/"><i class="fa-solid fa-school"></i>University of Science (HCMUS)</a> 
+                    <br>
+                    <a href="https://fetel.hcmus.edu.vn/"><i class="fa-solid fa-book"></i> Bachelor of Electronics and Communications</a>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- Contact -->
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        // Hide information of tab
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        // Hide information of tab
+
+        // Show information
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu() {
+        sidemenu.style.right = "0"
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+</body>
+</html>
